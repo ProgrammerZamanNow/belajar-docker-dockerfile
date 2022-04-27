@@ -51,3 +51,16 @@ docker container create --name ignore khannedy/ignore
 docker container start ignore
 
 docker container logs ignore
+
+# EXPOSE Instruction
+docker build -t khannedy/expose expose
+
+docker image inspect khannedy/expose
+
+docker container create --name expose -p 8080:8080 khannedy/expose
+
+docker container start expose
+
+docker container ls
+
+docker container stop expose
