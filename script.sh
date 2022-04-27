@@ -24,3 +24,12 @@ docker container logs command
 docker build -t khannedy/label label
 
 docker image inspect khannedy/label
+
+# ADD Instruction
+docker build -t khannedy/add add
+
+docker container create --name add khannedy/add
+
+docker container start add
+
+docker container logs add
