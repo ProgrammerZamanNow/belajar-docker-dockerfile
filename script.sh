@@ -123,3 +123,14 @@ docker container create --name arg -p 8080:8080 khannedy/arg
 docker container start arg
 
 docker container exec -i -t arg /bin/sh
+
+# HEALTHCHECK Instruction
+docker build -t khannedy/health health
+
+docker container create --name health -p 8080:8080 khannedy/health
+
+docker container start health
+
+docker container ls
+
+docker container inspect health
