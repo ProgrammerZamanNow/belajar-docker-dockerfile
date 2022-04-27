@@ -19,3 +19,8 @@ docker container create --name command khannedy/command
 docker container start command
 
 docker container logs command
+
+# LABEL Instruction
+docker build -t khannedy/label label
+
+docker image inspect khannedy/label
