@@ -96,3 +96,12 @@ docker container inspect volume
 #15a53c9a60b9aaddb3c294cde03e6f283f319acf0db3e40c5d4b4a992a6451f1
 
 docker volume ls
+
+# WORKDIR Instruction
+docker build -t khannedy/workdir workdir
+
+docker container create --name workdir -p 8080:8080 khannedy/workdir
+
+docker container start workdir
+
+docker container exec -i -t workdir /bin/sh
