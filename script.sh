@@ -33,3 +33,12 @@ docker container create --name add khannedy/add
 docker container start add
 
 docker container logs add
+
+# COPY Instruction
+docker build -t khannedy/copy copy
+
+docker container create --name copy khannedy/copy
+
+docker container start copy
+
+docker container logs copy
