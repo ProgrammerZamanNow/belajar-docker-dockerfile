@@ -134,3 +134,12 @@ docker container start health
 docker container ls
 
 docker container inspect health
+
+# ENTRYPOINT Instruction
+docker build -t khannedy/entrypoint entrypoint
+
+docker image inspect khannedy/entrypoint
+
+docker container create --name entrypoint -p 8080:8080 khannedy/entrypoint
+
+docker container start entrypoint
