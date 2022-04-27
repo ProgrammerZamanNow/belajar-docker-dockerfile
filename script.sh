@@ -114,3 +114,12 @@ docker container create --name user -p 8080:8080 khannedy/user
 docker container start user
 
 docker container exec -i -t user /bin/sh
+
+# ARG Instruction
+docker build -t khannedy/arg arg --build-arg app=pzn
+
+docker container create --name arg -p 8080:8080 khannedy/arg
+
+docker container start arg
+
+docker container exec -i -t arg /bin/sh
