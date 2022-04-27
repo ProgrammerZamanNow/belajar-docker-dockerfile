@@ -79,3 +79,20 @@ docker container ls
 docker container logs env
 
 docker container stop env
+
+# VOLUME Instruction
+docker build -t khannedy/volume volume
+
+docker image inspect khannedy/volume
+
+docker container create --name volume -p 8080:8080 khannedy/volume
+
+docker container start volume
+
+docker container logs volume
+
+docker container inspect volume
+
+#15a53c9a60b9aaddb3c294cde03e6f283f319acf0db3e40c5d4b4a992a6451f1
+
+docker volume ls
