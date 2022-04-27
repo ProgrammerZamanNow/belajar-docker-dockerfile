@@ -42,3 +42,12 @@ docker container create --name copy khannedy/copy
 docker container start copy
 
 docker container logs copy
+
+# .dockerignore
+docker build -t khannedy/ignore ignore
+
+docker container create --name ignore khannedy/ignore
+
+docker container start ignore
+
+docker container logs ignore
