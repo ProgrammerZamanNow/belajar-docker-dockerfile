@@ -64,3 +64,18 @@ docker container start expose
 docker container ls
 
 docker container stop expose
+
+# ENV Instruction
+docker build -t khannedy/env env
+
+docker image inspect khannedy/env
+
+docker container create --name env --env APP_PORT=9090 -p 9090:9090 khannedy/env
+
+docker container start env
+
+docker container ls
+
+docker container logs env
+
+docker container stop env
