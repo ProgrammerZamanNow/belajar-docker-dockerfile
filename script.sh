@@ -152,3 +152,10 @@ docker image ls
 docker container create --name multi -p 8080:8080 khannedy/multi
 
 docker container start multi
+
+# Docker Push
+docker tag khannedy/multi registry.digitalocean.com/programmerzamannow/multi
+
+docker --config /Users/khannedy/.docker-digital-ocean/ push registry.digitalocean.com/programmerzamannow/multi
+
+docker --config /Users/khannedy/.docker-digital-ocean/ pull registry.digitalocean.com/programmerzamannow/multi
